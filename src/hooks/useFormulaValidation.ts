@@ -1,10 +1,7 @@
 import { useState } from "react";
 import {
   BinaryOperator,
-  binaryOperators,
   commonBinaryOperators,
-  integerBinaryOperators,
-  StringBinaryOperator,
   stringBinaryOperators,
 } from "../constants/binaryOperators";
 import { STRING_VARIABLES, StringVariable } from "../constants/stringVariables";
@@ -12,7 +9,6 @@ import {
   NUMERIC_VARIABLES,
   NumericVariable,
 } from "../constants/numericVariables";
-import { is } from "@babel/types";
 
 type Variable = StringVariable | NumericVariable;
 
