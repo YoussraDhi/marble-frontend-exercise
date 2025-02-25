@@ -11,7 +11,7 @@ export default function FormulaBuilderForm() {
   const [variable, setVariable] = useState<StringVariable | NumericVariable>(
     "transaction.sender.last_name" // default to string variable
   );
-  const [operator, setOperator] = useState<BinaryOperator>("="); // default to addition
+  const [operator, setOperator] = useState<BinaryOperator>("="); // default to common operator
   const [value, setValue] = useState<string>("");
   const { error, isValid, validateFormula, resetError } =
     useFormulaValidation();
